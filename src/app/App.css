@@ -1,0 +1,56 @@
+.main-container {
+  width: 320px;
+  height: 480px;
+  background-color: lightcyan;
+  text-align: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 5%;
+}
+
+.entry-form {
+  display: flex;
+  border-bottom: solid 1px gray;
+}
+
+.input {
+  text-align: center;
+}
+
+.text-box {
+  margin-top: 30px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 2px solid gray;
+  outline: none;
+  background-color: lightcyan;
+}
+.add-button {
+  margin-top: 30px;
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+.todo-list {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.todo {
+  display: flex;
+  text-align: center;
+  border: 2px solid gray;
+  max-width: 280px;
+  margin: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  border-radius: 10px;
+}
+
+.delete {
+  position: absolute;
+  left: 280px;
+}
