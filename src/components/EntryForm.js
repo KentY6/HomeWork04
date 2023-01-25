@@ -8,6 +8,9 @@ export const EntryForm = ({ inputList, setInputList }) => {
     // e.preventDefault()で再レンダリングを回避
     e.preventDefault();
 
+    // テキストボックスが空白なら処理は終了
+    if (inputText === "") return;
+
     // スプレッド構文でaddListを呼ぶたびにオブジェクト配列を追加
     setInputList([
       ...inputList,
