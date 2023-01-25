@@ -2,12 +2,8 @@ import React, { useState } from "react";
 
 export const EntryForm = ({ inputList, setInputList }) => {
   const [inputText, setInputText] = useState("");
-  //   useRefの宣言
 
-  //   入力フォームへ打った文字を取得する
-  //   const refValue = setInputText(textRef.current.value);
-
-  //  submitした際にtextをlistに追加する
+  // inputTextをinputListに追加する
   const addList = (e) => {
     // e.preventDefault()で再レンダリングを回避
     e.preventDefault();
@@ -28,7 +24,8 @@ export const EntryForm = ({ inputList, setInputList }) => {
   console.log(inputText);
   return (
     <div className="input">
-      <form className="entry-form">
+      {/* onSubmitでEnterキーでも使えるようにする */}
+      <form className="entry-form" onSubmit={addList}>
         <input
           className="text-box"
           type="text"
