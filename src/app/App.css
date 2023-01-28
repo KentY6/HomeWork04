@@ -32,10 +32,12 @@
   margin-top: 30px;
   margin-left: 5px;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .todo-list {
   text-align: center;
+  min-height: 300px;
   margin-top: 20px;
 }
 
@@ -60,4 +62,29 @@
 .delete {
   position: absolute;
   left: 280px;
+  cursor: pointer;
+}
+
+.footer-area {
+  position: relative;
+  height: max-content;
+  margin-bottom: 10px;
+  border-top: solid 2px gray;
+}
+
+.filter-tools {
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  display: flex;
+}
+.filter-text {
+  border: none;
+  outline: none;
+}
+
+.filter-button {
+  margin-left: 10px;
+  cursor: pointer;
 }

@@ -8,6 +8,7 @@ export const EntryForm = ({ addTodos }) => {
     e.preventDefault();
     // // テキストボックスが空白なら処理は終了
     if (inputText === "") return;
+    // TodoList.jsのaddTodosにinputTextを渡す
     addTodos(inputText);
     setInputText("");
   };

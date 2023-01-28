@@ -1,12 +1,12 @@
 import React from "react";
 
-export const Todo = ({ inputList, todoDelete }) => {
+export const Todo = ({ todos, todoDelete }) => {
   // todoの削除
 
   return (
     <div className="todo-list">
       {/* map関数でListから一つ一つのTodoに分解 */}
-      {inputList.map((todo, index) => (
+      {todos.map((todo, index) => (
         <div className="todo" key={index}>
           <div className="todo-text">{todo.text}</div>
           {/* 分解したtodoのidをtodoDeleteの引数に入れる */}
