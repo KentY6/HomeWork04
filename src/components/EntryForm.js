@@ -24,7 +24,7 @@ export const EntryForm = ({ inputList, setInputList }) => {
     setInputText("");
   };
 
-  console.log(inputText);
+  // console.log(inputText);
   return (
     <div className="input">
       {/* onSubmitでEnterキーでも使えるようにする */}

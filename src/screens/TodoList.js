@@ -4,9 +4,10 @@ import { Todo } from "../components/Todo";
 
 export const TodoList = () => {
   const [inputList, setInputList] = useState([]);
+  console.log("inputList", inputList);
 
   return (
-    <div className="main-container">
+    <div className="todo-list-layout">
       <EntryForm inputList={inputList} setInputList={setInputList} />
       <Todo inputList={inputList} setInputList={setInputList} />
     </div>
