@@ -3,7 +3,7 @@ import React, { useState } from "react";
 export const FooterArea = ({ filterTodos }) => {
   const [filterText, setFilterText] = useState("");
 
-  const sendFilterText = (e) => {
+  const getFilterText = (e) => {
     e.preventDefault();
     if (filterText === "") return;
     filterTodos(filterText);
@@ -19,7 +19,7 @@ export const FooterArea = ({ filterTodos }) => {
           placeholder="検索したい値を入力"
           onChange={(e) => setFilterText(e.target.value)}
         />
-        <div className="filter-button" onClick={sendFilterText}>
+        <div className="filter-button" onClick={getFilterText}>
           <i className="fa-solid fa-filter"></i>
         </div>
       </form>
