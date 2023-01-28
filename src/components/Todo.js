@@ -1,11 +1,7 @@
 import React from "react";
 
-export const Todo = ({ inputList, setInputList }) => {
+export const Todo = ({ inputList, todoDelete }) => {
   // todoの削除
-  const todoDelete = (id) => {
-    // 自身のidと一致した場合list配列から取り除く
-    setInputList(inputList.filter((todo) => todo.id !== id));
-  };
 
   return (
     <div className="todo-list">
