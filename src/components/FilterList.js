@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export const FooterArea = ({ filterTodos }) => {
+export const FilterList = ({ filterTodos }) => {
   const [filterText, setFilterText] = useState("");
 
   const getFilterText = (e) => {

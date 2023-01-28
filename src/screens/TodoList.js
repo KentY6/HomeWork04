@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { EntryForm } from "../components/EntryForm";
-import { FooterArea } from "../components/FooterArea";
-import { Todo } from "../components/Todo";
+import { InputForm } from "../components/InputForm";
+import { FilterList } from "../components/FilterList";
+import { TodosLineUp } from "../components/TodosLineUp";
 
 export const TodoList = () => {
   const [todos, setTodos] = useState([
@@ -56,9 +56,9 @@ export const TodoList = () => {
 
   return (
     <div className="todo-list-layout">
-      <EntryForm addTodos={addTodos} />
-      <Todo todos={todos} todoDelete={todoDelete} />
-      <FooterArea filterTodos={filterTodos} />
+      <InputForm addTodos={addTodos} />
+      <TodosLineUp todos={todos} todoDelete={todoDelete} />
+      <FilterList filterTodos={filterTodos} />
     </div>
   );
 };
