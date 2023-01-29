@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { InputForm } from "../components/InputForm";
 import { FilterList } from "../components/FilterList";
-import { TodosLineUp } from "../components/TodosLineUp";
+import { ListLineUp } from "../components/ListLineUp";
 
 export const TodoList = () => {
   const [todos, setTodos] = useState([
@@ -57,7 +57,7 @@ export const TodoList = () => {
   return (
     <div className="todo-list-layout">
       <InputForm addTodos={addTodos} />
-      <TodosLineUp todos={todos} todoDelete={todoDelete} />
+      <ListLineUp todos={todos} todoDelete={todoDelete} />
       <FilterList filterTodos={filterTodos} />
     </div>
   );

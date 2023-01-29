@@ -1,6 +1,6 @@
 import React from "react";
 
-export const TodosLineUp = ({ todos, todoDelete }) => {
+export const ListLineUp = ({ todos, todoDelete }) => {
   // todoの削除
 
   return (
