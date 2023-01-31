@@ -88,3 +88,17 @@
   margin-left: 10px;
   cursor: pointer;
 }
+
+.home {
+  text-align: center;
+  margin: 200px;
+}
+
+.goto-todo {
+  text-decoration: none;
+  color: black;
+  border: solid 2px black;
+  background-color: lightblue;
+  cursor: pointer;
+  padding: 5px;
+}
