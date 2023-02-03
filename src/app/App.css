@@ -102,3 +102,7 @@
   cursor: pointer;
   padding: 5px;
 }
+
+.no-match {
+  text-align: center;
+}
