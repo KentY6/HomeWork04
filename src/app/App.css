@@ -1,15 +1,16 @@
-.main-container {
+.todo-list-layout {
   width: 320px;
-  height: 480px;
+  min-height: 480px;
   background-color: lightcyan;
   text-align: center;
   justify-content: center;
   margin-top: 20px;
   margin-left: 20px;
+  padding-bottom: 10px;
   border-radius: 5%;
 }
 
-.entry-form {
+.input-form {
   display: flex;
   border-bottom: solid 1px gray;
 }
@@ -31,10 +32,12 @@
   margin-top: 30px;
   margin-left: 5px;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .todo-list {
   text-align: center;
+  min-height: 300px;
   margin-top: 20px;
 }
 
@@ -50,7 +53,56 @@
   border-radius: 10px;
 }
 
+.todo-text {
+  max-width: 220px;
+  overflow-wrap: break-word;
+  text-align: left;
+}
+
 .delete {
   position: absolute;
   left: 280px;
+  cursor: pointer;
+}
+
+.footer-area {
+  position: relative;
+  height: max-content;
+  margin-bottom: 10px;
+  border-top: solid 2px gray;
+}
+
+.filter-tools {
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  display: flex;
+}
+.filter-text {
+  border: none;
+  outline: none;
+}
+
+.filter-button {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.home {
+  text-align: center;
+  margin: 200px;
+}
+
+.goto-todo {
+  text-decoration: none;
+  color: black;
+  border: solid 2px black;
+  background-color: lightblue;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.no-match {
+  text-align: center;
 }
